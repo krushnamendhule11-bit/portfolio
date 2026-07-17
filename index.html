@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Krushna Mendhule | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -19,72 +18,163 @@
 
 <body>
 
-<header>
-    <nav>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Krushna.</div>
 
-        <div class="logo">Krushna.</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Hero -->
+    <section class="hero" id="home">
 
-    </nav>
-</header>
+        <div class="left">
 
-<section class="hero" id="home">
+            <h1>Hello 👋</h1>
 
-    <div class="left">
+            <h2>I'm <span>Krushna Mendhule</span></h2>
 
-        <h1>Hello 👋</h1>
+            <h3 id="typing"></h3>
 
-        <h2>I'm <span>Krushna Mendhule</span></h2>
+            <p>
+                MBA Student passionate about AWS, DevOps,
+                SQL and Business Analytics.
+            </p>
 
-        <h3 id="typing"></h3>
-
-        <p>
-            MBA Student passionate about AWS, DevOps,
-            SQL and Business Analytics.
-        </p>
-
-        <a href="Krushna_Mendhule_Resume.pdf" class="btn">
-            Download Resume
-        </a>
-
-        <a href="#projects" class="btn btn2">
-            View Projects
-        </a>
-
-        <div class="social">
-
-            <a href="https://github.com/krushnamendhule11-bit" target="_blank">
-                <i class="fab fa-github"></i>
+            <a href="Krushna_Mendhule_Resume.pdf" class="btn" download>
+                Download Resume
             </a>
 
-            <a href="#">
-                <i class="fab fa-linkedin"></i>
+            <a href="#projects" class="btn btn2">
+                View Projects
             </a>
 
-            <a href="mailto:your@email.com">
-                <i class="fas fa-envelope"></i>
-            </a>
+            <div class="social">
+
+                <a href="https://github.com/krushnamendhule11-bit" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:your@email.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
+        <div class="right">
+            <img src="profile.jpg" alt="Profile">
+        </div>
 
-    <div class="right">
+    </section>
 
-        <img src="profile.jpg" alt="Profile">
+    <!-- About -->
 
-    </div>
+    <section id="about">
 
-</section>
+        <h2 class="heading">About Me</h2>
 
-<script src="script.js"></script>
+        <div class="about-text">
+
+            <h3>Future Business Analyst</h3>
+
+            <p>
+                I am an MBA student passionate about AWS,
+                DevOps, SQL and Business Analytics.
+            </p>
+
+            <p>
+                I enjoy solving business problems using technology
+                and continuously learning new skills.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2 class="heading">Skills</h2>
+
+        <div class="cards">
+
+            <div class="card">AWS</div>
+            <div class="card">Linux</div>
+            <div class="card">Git</div>
+            <div class="card">Docker</div>
+            <div class="card">SQL</div>
+            <div class="card">Power BI</div>
+            <div class="card">Excel</div>
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2 class="heading">Projects</h2>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="project">
+            <h3>AWS Static Website</h3>
+            <p>Hosted a static website using Amazon S3.</p>
+        </div>
+
+        <div class="project">
+            <h3>SQL Student Database</h3>
+            <p>Built a student database using SQL queries.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="heading">Contact Me</h2>
+
+        <p><strong>Email:</strong> your@email.com</p>
+
+        <p><strong>GitHub:</strong> github.com/krushnamendhule11-bit</p>
+
+        <p><strong>Location:</strong> India</p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Krushna Mendhule. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
