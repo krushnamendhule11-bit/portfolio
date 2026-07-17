@@ -272,3 +272,105 @@ nav ul li a:hover {
     height: 240px;
   }
 }
+/* =========================
+   SKILLS
+========================= */
+.skills {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid #38bdf8;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.skills-grid span:hover {
+  background: #38bdf8;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.projects {
+  padding: 80px 10%;
+}
+
+.projects h2 {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-left: 4px solid #38bdf8;
+  background: rgba(15,23,42,.6);
+  border-radius: 6px;
+}
+
+.project h3 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(15,23,42,.95);
+  color: #aaa;
+  font-size: 14px;
+}
+
