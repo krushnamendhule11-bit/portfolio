@@ -1,51 +1,51 @@
-const text = [
+const words=[
 "AWS Learner",
 "DevOps Learner",
 "Business Analytics Student",
 "Future Business Analyst"
 ];
 
-let i = 0;
-let j = 0;
-let current = "";
-let isDeleting = false;
+let i=0;
+let j=0;
+let current="";
+let deleting=false;
 
-function type() {
+function typing(){
 
-document.getElementById("typing").textContent = current;
+document.getElementById("typing").innerHTML=current;
 
-if(!isDeleting){
+if(!deleting){
 
-current = text[i].substring(0,j++);
-if(j > text[i].length){
-isDeleting = true;
+current=words[i].substring(0,j++);
+
+if(j>words[i].length){
+
+deleting=true;
+
 }
 
 }else{
 
-current = text[i].substring(0,j--);
+current=words[i].substring(0,j--);
 
 if(j==0){
-isDeleting=false;
+
+deleting=false;
+
 i++;
 
-if(i==text.length){
+if(i==words.length){
+
 i=0;
-}
-}
 
 }
 
-setTimeout(type,120);
+}
 
 }
 
-type();
-
-const mode=document.getElementById("mode");
-
-mode.onclick=()=>{
-
-document.body.classList.toggle("light");
+setTimeout(typing,120);
 
 }
+
+typing();
