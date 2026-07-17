@@ -1,51 +1,40 @@
-const words=[
-"AWS Learner",
-"DevOps Learner",
-"Business Analytics Student",
-"Future Business Analyst"
+const words = [
+  "AWS Learner",
+  "DevOps Learner",
+  "Business Analytics Student",
+  "Future Business Analyst"
 ];
 
-let i=0;
-let j=0;
-let current="";
-let deleting=false;
+let i = 0; // index of current word
+let j = 0; // index of current letter
+let current = "";
+let deleting = false;
 
-function typing(){
+function typing() {
+  const typingElement = document.getElementById("typing");
 
-document.getElementById("typing").innerHTML=current;
+  if (!deleting) {
+    current = words[i].substring(0, j++);
+    typingElement.textContent = current;
 
-if(!deleting){
+    if (j > words[i].length) {
+      deleting = true;
+      setTimeout(typing, 1000); // pause before deleting
+      return;
+    }
+  } else {
+    current = words[i].substring(0, j--);
+    typingElement.textContent = current;
 
-current=words[i].substring(0,j++);
+    if (j === 0) {
+      deleting = false;
+      i++;
+      if (i === words.length) i = 0; // loop back to first word
+    }
+  }
 
-if(j>words[i].length){
-
-deleting=true;
-
-}
-
-}else{
-
-current=words[i].substring(0,j--);
-
-if(j==0){
-
-deleting=false;
-
-i++;
-
-if(i==words.length){
-
-i=0;
-
-}
-
-}
-
-}
-
-setTimeout(typing,120);
-
+  const speed = deleting ? 80 : 120; // faster delete
+  setTimeout(typing, speed);
 }
 
 typing();
